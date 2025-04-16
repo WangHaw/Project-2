@@ -1,5 +1,8 @@
-//Just missing a header
-
+/*
+  File   : WordLadder.h
+  Purpose: Declares the WordLadder class and its core methods for dictionary loading,
+           sorting, duplicate removal, and word transformation logic.
+*/
 
 // WordLadder.h
 #ifndef WORDLADDER_H
