@@ -1,5 +1,31 @@
-// Still need IPO header
+/*
+------------------------------------------------------------
+  Project: Word Ladder Transformation
+  File   : main.cpp
+  Author : Hawjun Wang, 
+  Date   : 4/16/2025
 
+  Input:
+    - A dictionary file containing valid 3, 4, and 5-letter words.
+    - Start and end words from the user (same length, lowercase).
+
+  Processing:
+    - Loads and normalizes the dictionary.
+    - Sorts words lexicographically using radix sort and queues.
+    - Removes duplicates.
+    - Validates user input for word length and existence in dictionary.
+    - Finds any valid transformation path using BFS.
+    - Finds the optimal (shortest) transformation path.
+    - Tracks each transformation using stack to reconstruct path.
+    - Displays character differences in `{x->y}` format.
+
+  Output:
+    - Sorted list of dictionary words (filtered by length).
+    - Any transformation path from start to end.
+    - Shortest transformation path with character differences.
+    - Number of steps in each transformation sequence.
+------------------------------------------------------------
+*/
 
 // main.cpp
 #include "WordLadder.h"
