@@ -1,4 +1,10 @@
-// Didnt organized yet and missing a header
+/*
+  File   : WordLadder.cpp
+  Purpose: Implements the core methods for the WordLadder class, including
+           loading, sorting, deduplication, and word transformation logic.
+*/
+
+// Didnt organized yet 
 
 // WordLadder.cpp
 #include "WordLadder.h"
