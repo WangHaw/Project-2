@@ -51,10 +51,10 @@ for (const string& w : sortedWords)
 if (w.size() == 4) cout << w << endl;
 }
 
-// --- Task 4: Immediate Transformation ---
+
+
 
 // Display task number for clarity
-
 cout << "//-----------------------------------------------------//" << endl;
 cout << "//                       Task 4                        //" << endl;  
 cout << "//-----------------------------------------------------//" << endl;
