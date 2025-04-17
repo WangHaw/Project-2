@@ -144,7 +144,8 @@ bool WordLadder::findAnyTransformation(const string& start, const string& end, v
     }
     stk.push(start);
 
-    while (!stk.empty()) {
+    while (!stk.empty()) 
+    {
         path.push_back(stk.top());
         stk.pop();
     }
@@ -153,7 +154,8 @@ bool WordLadder::findAnyTransformation(const string& start, const string& end, v
 
 // Task 5: Finds the shortest transformation path using BFS - Meena
 // Finds the shortest transformation path using BFS
-bool WordLadder::findOptimalTransformation(const string& start, const string& end, vector<string>& path) {
+bool WordLadder::findOptimalTransformation(const string& start, const string& end, vector<string>& path) 
+{
     unordered_map<string, string> parent;
     unordered_set<string> visited;
     queue<string> q;
