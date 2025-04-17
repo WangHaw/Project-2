@@ -8,11 +8,27 @@
 #ifndef WORDLADDER_H
 #define WORDLADDER_H
 
+#include <iomanip>
 #include <string>
 #include <vector>
 #include <unordered_set>
 
 using namespace std;
+
+// Constants - Meena
+const string COLLEGE_NAME = "SUNY Broome Community College";
+const string NAME = "Meena Rahmani - Hawjun Wang";
+const string COURSE_INFO = "CST - 202  Project 2";
+
+// Width used for formatting output
+const int SCREEN_WIDTH = 80;
+
+// Function to output the heading of the program to a file stream
+void OutputHeading(ofstream& fout);
+
+// Function to output a divider line 
+void OutputDivider(ostream& out, char character, int width);
+
 
 // WordLadder class manages word dictionary and transformation logic
 class WordLadder
