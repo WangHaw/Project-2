@@ -201,7 +201,8 @@ string WordLadder::formatTransformation(const string& from, const string& to)
 {
     for (size_t i = 0; i < from.size(); ++i)
     {
-        if (from[i] != to[i]) {
+        if (from[i] != to[i]) 
+        {
             return from + " {" + from[i] + "->" + to[i] + "} " + to;
         }
     }
