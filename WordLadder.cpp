@@ -144,8 +144,7 @@ bool WordLadder::findAnyTransformation(const string& start, const string& end, v
     }
     stk.push(start);
 
-    while (!stk.empty()) 
-    {
+    while (!stk.empty()) {
         path.push_back(stk.top());
         stk.pop();
     }
@@ -154,8 +153,7 @@ bool WordLadder::findAnyTransformation(const string& start, const string& end, v
 
 // Task 5: Finds the shortest transformation path using BFS - Meena
 // Finds the shortest transformation path using BFS
-bool WordLadder::findOptimalTransformation(const string& start, const string& end, vector<string>& path) 
-{
+bool WordLadder::findOptimalTransformation(const string& start, const string& end, vector<string>& path) {
     unordered_map<string, string> parent;
     unordered_set<string> visited;
     queue<string> q;
@@ -201,11 +199,27 @@ string WordLadder::formatTransformation(const string& from, const string& to)
 {
     for (size_t i = 0; i < from.size(); ++i)
     {
-        if (from[i] != to[i]) 
-        {
+        if (from[i] != to[i]) {
             return from + " {" + from[i] + "->" + to[i] + "} " + to;
         }
     }
     return from + " -> " + to;
 }
 
+
+// Function to print the heading with the college name, personal name, and course info - Meena
+void OutputHeading(ofstream& fout)
+{
+    OutputDivider(fout, '-', SCREEN_WIDTH);
+    fout << setw((SCREEN_WIDTH - COLLEGE_NAME.length()) / 2) << "" << COLLEGE_NAME << endl;
+    fout << setw((SCREEN_WIDTH - NAME.length()) / 2) << "" << NAME << endl;
+    fout << setw((SCREEN_WIDTH - COURSE_INFO.length()) / 2) << "" << COURSE_INFO << endl;
+    OutputDivider(fout, '-', SCREEN_WIDTH);
+}
+
+// Function to print a divider line made of a specific character - Meena
+void OutputDivider(ostream& out, char character, int width)
+{
+    out << setfill(character) << setw(width) << "" << setfill(' ') << endl;
+
+}
